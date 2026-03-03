@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emversity PM 2026 Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow bg-glow-a"></div>
+    <div class="bg-glow bg-glow-b"></div>
+
+    <header class="topbar">
+      <div>
+        <h1>Emversity Performance Marketing 2026</h1>
+        <p class="subtitle">Planning cockpit for targets, funnel, budget, and script operations</p>
+      </div>
+      <div class="status" id="loadStatus">Loading data...</div>
+    </header>
+
+    <nav class="tabs" id="tabs">
+      <button class="tab active" data-tab="overview">Overview</button>
+      <button class="tab" data-tab="funnel">Monthly Funnel</button>
+      <button class="tab" data-tab="programs">Program View</button>
+      <button class="tab" data-tab="scripts">Scripts</button>
+    </nav>
+
+    <section class="panel filters">
+      <div class="filter-item">
+        <label for="monthFilter">Month</label>
+        <select id="monthFilter"></select>
+      </div>
+      <div class="filter-item">
+        <label for="programFilter">Program</label>
+        <select id="programFilter"></select>
+      </div>
+      <div class="filter-item">
+        <label for="sourceFilter">Source</label>
+        <select id="sourceFilter"></select>
+      </div>
+      <div class="filter-item script-only">
+        <label for="scriptProgramFilter">Script Program</label>
+        <select id="scriptProgramFilter"></select>
+      </div>
+      <div class="filter-item wide script-only">
+        <label for="scriptSearch">Script Search</label>
+        <input id="scriptSearch" type="text" placeholder="Search hook, angle, CTA, tags..." />
+      </div>
+    </section>
+
+    <section id="overviewTab" class="tab-content active">
+      <div class="kpi-grid" id="overviewCards"></div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Program PM Budget (Annual)</h3>
+          <div id="programBudgetBars" class="bars"></div>
+        </div>
+        <div class="panel">
+          <h3>PM Enrollment Targets (Annual)</h3>
+          <div id="programEnrollBars" class="bars"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Overall Target Sheet</h3>
+        <div class="table-wrap"><table id="overallTable"></table></div>
+      </div>
+    </section>
+
+    <section id="funnelTab" class="tab-content">
+      <div class="kpi-grid" id="funnelCards"></div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Monthly Spend vs Enrollments</h3>
+          <svg id="trendChart" class="chart" viewBox="0 0 900 320" preserveAspectRatio="none"></svg>
+        </div>
+        <div class="panel">
+          <h3>Source Split (Filtered)</h3>
+          <div id="sourceBars" class="bars"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Filtered Monthly Program Source Data</h3>
+        <div class="table-wrap"><table id="funnelTable"></table></div>
+      </div>
+    </section>
+
+    <section id="programsTab" class="tab-content">
+      <div class="kpi-grid" id="programCards"></div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Program Monthly Budget Trend</h3>
+          <svg id="programTrendChart" class="chart" viewBox="0 0 900 320" preserveAspectRatio="none"></svg>
+        </div>
+        <div class="panel">
+          <h3>Program Funnel Mix (Filtered)</h3>
+          <div id="funnelMixBars" class="bars"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Program Monthly Funnel Plan</h3>
+        <div class="table-wrap"><table id="programTable"></table></div>
+      </div>
+    </section>
+
+    <section id="scriptsTab" class="tab-content">
+      <div class="kpi-grid" id="scriptCards"></div>
+      <div class="grid-2">
+        <div class="panel">
+          <h3>Top Angles by Script Count</h3>
+          <div id="angleBars" class="bars"></div>
+        </div>
+        <div class="panel">
+          <h3>Word Count Distribution</h3>
+          <div id="wordCountBars" class="bars"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h3>Script Library</h3>
+        <div class="table-wrap"><table id="scriptsTable"></table></div>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

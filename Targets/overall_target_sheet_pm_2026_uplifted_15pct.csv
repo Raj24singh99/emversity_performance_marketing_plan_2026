@@ -1,0 +1,8 @@
+Program,Enrolments (Overall),% Contribution of PM,Enrolment by PM,AOV,Bookings,Emversity Revenue %,Emversity Revenue,Budgeted CAC (PM),PM Budget (Pre GST),Scenario,Notes
+EDGE (BSC) - AHS + Hospitality,1800,0.3795,683.1,680000,464508000,0.6,278704800,85000,50490000,Uplifted 15%,PM enrollment uplift applied
+SMART (BVOC) - Hospitality,572,0.460402,263.35,360000,94806000,0.85,80585100,75000,17160000,Uplifted 15%,PM enrollment uplift applied
+SPRINT (Certification) - Hospitality,715,0.517902,370.3,100000,37030000,0.92,34067600,35000,11261250,Uplifted 15%,PM enrollment uplift applied
+SPRINT (Certification) - AHS,792,0.46029,364.55,60000,21873000,0.99,21654270,25000,7920000,Uplifted 15%,PM enrollment uplift applied
+Residential Campus,600,0.575,345,500000,172500000,0.975,168187500,75000,22500000,Uplifted 15%,No uplift change from current target
+ASCEND,240,0.378542,90.85,400000,36340000,0.67,24347800,75000,5940000,Uplifted 15%,PM enrollment uplift applied
+Total,4719,,2117.15,,827057000,,607547070,,115271250,Uplifted 15%,Derived totals
